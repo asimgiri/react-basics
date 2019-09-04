@@ -1,33 +1,80 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+  text-decoration: none;
+  color: #000;
 }
 
-.App-link {
-  color: #61dafb;
+.dropdown {
+  width: fit-content;
+  margin: 40px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dropdown .link {
+  background: #333;
+  width: fit-content;
+  padding: 8px 14px;
+  color: #fff;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+
+.dropdown  .active {
+  background: rgba(0, 123, 255);
+}
+
+.dropdown .content {
+  background: #fff;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, .12), 0 0px 0px rgba(0, 0, 0, .24);
+  border: 1px solid #ddd;
+  width: 160px;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown .content li {
+  padding: 5px 12px;
+}
+
+.dropdown .content li:hover {
+  background: #f8f9fc;
+}
+
+.accordionList {}
+
+.accordion {
+  width: 480px;
+  margin: auto;
+}
+
+.accordion li {
+  padding: 10px;
+}
+
+.accordion .link {
+  border: 1px solid #aaa;
+  background: #eef;
+  cursor: pointer;
+}
+
+.accordion .active {
+  background: rgba(0, 123, 255, .4);
+}
+
+.accordion .link i {
+  float: right;
+}
+
+.accordion .content {
+  border: 1px solid #aaa;
+  border-top: none;
+  text-align: justify;
 }
